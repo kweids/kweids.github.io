@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-image: url(images/homebg.jpg);
+}
+.header2{
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-color: rgb(41, 79, 83);
+    color: aliceblue;
+}
+.homepage{
+    text-align: center;
+}
+.homepage ul li{
+    padding: 30px;
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    font-size: 13px;
+}
+.homepage ul li a{
+    text-decoration: none;
+    color: rgb(249, 249, 249);
+    text-transform: uppercase;
+}
+.homepage ul li a::after{
+    content: '';
+    display: flex;
+    height: 2px;
+    width: 0%;
+    transition: 0.5s ;
+}
+.homepage ul li a:hover{
+    width: 100%;
+    background-color:  rgb(103, 165, 172);
+}
+.main{
+    text-align: center;
+    padding: 200px;
+}
+.main h1{
+    color: rgb(6, 20, 32);
+}
+.discover {
+    text-align: center;
+    padding-top: 50px;
+    background-color: rgb(41, 79, 83);
+    align-items: center;
+    position: relative;
+}
+.discover h1{
+    color: aliceblue;
+}
+.theory{
+    padding: 10px;
+}
+.theory h3{
+    color: aliceblue;
+}
+
+/* --- characters --- */
+.content_characters {
+    padding: 90px;
+    line-height: 1.5;
+    color: aliceblue;
+    font-size: medium;
+    align-items: center;
+    margin-top: 20px;
+    text-align: justify;
+}
+.content_characters p{
+    text-align: justify;
+    margin-bottom: 10px;
+    padding: 0px;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 7.5%;
+}
+
+.content_characters h1{
+    color: aliceblue;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.content_characters h3{
+    color: aliceblue;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.charac_image{
+	margin-top: 0px;
+    align-items: center;
+    text-align: center;
+}
+/* ------------------ */
+/* --- about --- */
+.content_about {
+    padding: 90px;
+    line-height: 1.5;
+    color: aliceblue;
+    font-size: medium;
+    margin-top: 20px;
+    text-align: justify;
+    align-items: center;
+}
+.content_about p{
+    text-align: justify;
+    margin-left: 10%;
+    margin-right: 7.5%;
+    margin-bottom: 10px;
+    padding: 0px;
+    align-items: center;
+}
+
+.content_about h1{
+    color: aliceblue;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.forimage{
+	margin-top: 0px;
+    text-align: center;
+    align-items: center;
+}
+.forimage img{
+    width: 100%;
+}
+/*-------------- */
+.button {
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    padding: 10px 15px;
+    position: relative;
+    border-radius: 20px;
+    align-items: center;
+    margin-top: 10px;
+}
+.button a{
+    text-decoration: none;
+    font-size: small;
+    color: rgb(17, 99, 99);
+    align-items: center;
+}
+.button a:hover{
+    color:  rgba(180, 109, 17, 0.753);
+}
+/* --- theory --- */
+.content_theory {
+    padding: 90px;
+    line-height: 1.5;
+    color: aliceblue;
+    font-size: medium;
+    margin-top: 20px;
+    text-align: center;
+    align-items: center;
+}
+.content_theory p{
+    text-align: justify;
+    margin-bottom: 40px;
+    padding: 0px;
+    margin-top: 10px;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 7.5%;
+}
+.content_theory h1{
+    color: aliceblue;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.content_theory h3{
+    color: aliceblue;
+    text-align: center;
+}
+/*-------------- */
+/* --- footer --- */
+.footer{
+    font-size: 11px;
+    margin-top: 120px;
+    margin-bottom: 0px;
+    text-align: center;
+    padding: 10px;
+}
+.footer p{
+    color: aliceblue;
+    font-weight: bold;
+}
+.icons div .fa{
+    color: aliceblue;
+    width: 50px;
+    font-size: large;
+    margin-top: 10px;
+    margin-left: -20px;
+}
+/* ----------- */
+nav .fa{
+    display: none;
+}
+/* --- for responsive ---*/
+@media (max-width: 700px){
+    *{
+        margin-top: 0;
+        padding: 0;
+    }
+    .main h1{
+        text-align: center;
+        width: 200px;
+    }
+    .homepage ul li{
+        display: block;
+    }
+    .homepage{
+        position: absolute;
+        background: tan;
+        height: 100vh;
+        width: 150px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+    }
+    nav .fa{
+        display: block;
+        color: aliceblue;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+        margin-top: 0;
+        padding: 10px;
+        text-align: right;
+    }
+    .homepage ul li{
+        padding: 30px;
+    }
+    .content_about p{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .content_theory p {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .content_characters p{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}

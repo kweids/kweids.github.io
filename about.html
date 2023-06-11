@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>The Fairly OddParents</title>
+</head>
+<body>
+    <div class="header2">
+        <nav>
+            <div class="homepage" id="homePage">
+                <i class="fa fa-times" onclick="hideMenu()"></i>   
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="characters.html">Characters</a></li>
+                    <li><a href="theory.html">Theories</a></li>
+                    <li><a href="about.html"target="blank" class="active">About</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+<script>
+    var homePage = document.getElementById("homePage");
+    function showMenu(){
+        homePage.style.right = "0";
+    }
+    function hideMenu(){
+        homePage.style.right = "-200px";
+    }
+</script>           
+        <div class="content_about">
+            <h1>About</h1>
+            <div class="forimage">
+                <img src="images/banner.png">
+            </div>
+            <p>The Fairly OddParents tells the story of a 10-year-old boy named Timmy Turner who is neglected by his parents and abused by his babysitter, Vicky. One day, he is granted two fairy godparents, Cosmo and Wanda, who grant his every wish to improve his miserable life. However, these wishes usually backfire badly and cause a series of problems that Timmy must fix.</p>
+            <p>The series originated from shorts on Nickelodeon's animation showcase Oh Yeah! Cartoons that aired from 1998 to 2002. Due to their popularity, the shorts were later green-lit to become a half-hour series, which premiered on March 30, 2001. Originally, it ended on November 25, 2006, totaling five seasons and 80 episodes, but revived in 2008. Production of the series ceased again after Hartman left Nickelodeon in February 2018. It is Nickelodeon's second longest-running animated show, behind SpongeBob SquarePants (1999–present).</p>
+        </div>
+        <div class="footer">
+            <p>&copy; 2023 The Fairly OddParents <br> Panfilo M. Manguera Sr. Road., Tanza, Boac, Marinduque <br>Cellphone No. 09357893210 <br> All rights reserved.</p>
+            <div class="icons">
+                <div>
+                    <a href="https://www.facebook.com/FairlyOddParents">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@TheFairlyOddParentsOfficial">
+                        <i class="fa fa-youtube-play"></i>
+                    </a>
+                    <a href="https://en.wikipedia.org/wiki/The_Fairly_OddParents">
+                        <i class="fa fa-wikipedia-w"></i>
+                    </a>
+                    <a href="https://twitter.com/FairlyOddFather">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>
